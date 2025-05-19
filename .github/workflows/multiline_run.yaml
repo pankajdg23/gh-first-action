@@ -1,0 +1,12 @@
+name: First workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Greetings
+        run:  |
+            echo "First commit"
+            echo "Second commit"
+      - name: Print Goodbye
+        run: echo "Done -byee!"
